@@ -10,9 +10,9 @@ contact
 - contact information
 */
 
-export default function Contact() {
+export default function About() {
   return (
-    <div className="contact-page">
+    <div className="about-page">
       <div className="contact-information-container">
         <div className="title-wrapper">
           <p>Software Developer</p>
