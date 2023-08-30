@@ -1,4 +1,6 @@
-export default function Navbar() {
+export default function Navbar(props) {
+  const { currentHighlight } = props;
+
   return (
     <div className="navbar">
       <div className="home-container">
