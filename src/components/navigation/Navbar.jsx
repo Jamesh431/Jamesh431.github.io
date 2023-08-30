@@ -1,6 +1,6 @@
-export default function Header() {
+export default function Navbar() {
   return (
-    <div className="header">
+    <div className="navbar">
       <div className="home-container">
         <div className="nav-link-wrapper home">
           {/* home button here */}
