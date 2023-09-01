@@ -1,14 +1,16 @@
-import { jamesHalesResumeDarkmode } from "../../assets/jamesHalesResumeLightmode.pdf";
-import { jamesHalesResumeLightmode } from "../../assets/jamesHalesResumeLightmode.pdf";
+import jamesHalesResumeDarkmode from "../../assets/jamesHalesResumeDarkmode.pdf";
+import jamesHalesResumeLightmode from "../../assets/jamesHalesResumeLightmode.pdf";
 
 const resumse_array = [
   {
-    filePath: "../../assets/james-hales-resume-darkmode.pdf",
-    fileName: "james-hales-resume-darkmode",
+    filePath: jamesHalesResumeDarkmode,
+    fileName: "james-hales-resume-darkmode.pdf",
+    onHover: "My resume, but darkmode!",
   },
   {
-    filePath: "../../assets/james-hales-resume-lightmode.pdf",
-    fileName: "james-hales-resume-lightmode",
+    filePath: jamesHalesResumeLightmode,
+    fileName: "james-hales-resume-lightmode.pdf",
+    onHover: "My resume",
   },
 ];
 
