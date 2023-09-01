@@ -11,7 +11,7 @@ export default function LandingPage(props) {
   } = data;
 
   return (
-    <div className="project-wrapper">
+    <div className="project-wrapper" key={project_name}>
       <div className="project-name">{project_name}</div>
 
       <div className="project-type">{project_type}</div>

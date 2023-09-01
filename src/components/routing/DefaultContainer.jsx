@@ -1,4 +1,4 @@
-import { BrowserRouter as Route, Router, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "../navigation/Navbar";
 import Footer from "../navigation/Footer";
@@ -10,7 +10,7 @@ export default function DefaultContainer() {
   return (
     <div className="app">
       <Router>
-        <Navbar />
+        <Route component={Navbar} />
 
         <Switch>
           <Route exact path="/" component={LandingPage} />
