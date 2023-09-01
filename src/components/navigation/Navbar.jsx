@@ -8,18 +8,20 @@ export default function Navbar(props) {
   const [currentPosition, setCurrentPosition] = useState("");
   const [showDownloadOptions, setShowDownloadOptions] = useState(false);
 
-  // useEffect(() => {
-  //   props.history?.push(`/${currentPosition}`);
-  // }, [currentPosition]);
+  useEffect(() => {
+    props.history?.push(`/${currentPosition}`);
+  }, [currentPosition]);
 
   return (
     <div className="header">
       <div className="navigation">
         <div className="home-container">
-          <NavLink className="nav-link-wrapper home" to="/">
-            <a href="/" onClick={() => setCurrentPosition("home")}>
-              home
-            </a>
+          <NavLink
+            className="nav-link-wrapper home"
+            to="/home"
+            onClick={() => setCurrentPosition("Home")}
+          >
+            home
           </NavLink>
         </div>
 
@@ -36,10 +38,12 @@ export default function Navbar(props) {
           </div>
 
           <div className="header-option-wrapper github">
-            <NavLink className="nav-link-wrapper github" to="/github">
-              <a href="/github" onClick={() => setCurrentPosition("github")}>
-                github
-              </a>
+            <NavLink
+              className="nav-link-wrapper github"
+              to="/github"
+              onClick={() => setCurrentPosition("Github")}
+            >
+              github
             </NavLink>
           </div>
 
@@ -51,14 +55,13 @@ export default function Navbar(props) {
             {showDownloadOptions && (
               <DownloadPopup list_of_data={resumse_array} />
             )}
-            Resume(s)
+            {!showDownloadOptions ? "Resume(s)" : null}
           </div>
         </div>
       </div>
 
       <div className="header-title">
-        {currentPosition === "Landing" ||
-        currentPosition === "Github" ? null : (
+        {currentPosition === "Home" || currentPosition === "Github" ? null : (
           <h1>{currentPosition}</h1>
         )}
       </div>
