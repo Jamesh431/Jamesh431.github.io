@@ -48,7 +48,7 @@ export default function Navbar(props) {
           </div>
 
           <div
-            className="header-option-wrapper coverletter"
+            className="header-option-wrapper resumes"
             onMouseEnter={() => setShowDownloadOptions(true)}
             onMouseLeave={() => setShowDownloadOptions(false)}
           >
