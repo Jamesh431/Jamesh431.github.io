@@ -10,6 +10,13 @@ function mountProjectsInformation() {
 export default function LandingPage() {
   return (
     <div className="landing-page">
+      <div className="certificates-container">
+        <div className="certificate-wrapper">Foundations</div>
+
+        <div className="certificate-wrapper">Front End</div>
+
+        <div className="certificate-wrapper">Back End</div>
+      </div>
       <div className="projects-container">{mountProjectsInformation()}</div>
     </div>
   );
