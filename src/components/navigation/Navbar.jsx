@@ -1,30 +1,49 @@
-export default function Navbar(props) {
-  const { currentPosition } = props;
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+
+import downloadPopup from "src/components/util/downloadPopup.js";
+import resumse_array from "src/helpers/resume_array.js";
+
+export default function Navbar() {
+  const [currentPosition, setCurrentPosition] = useState("");
+  const [showDownloadOptions, setShowDownloadOptions] = useState(false);
 
   return (
     <div className="header">
       <div className="navigation">
         <div className="home-container">
-          <div className="nav-link-wrapper home">
-            {/* home button here */}
-            home
-          </div>
+          <NavLink className="nav-link-wrapper home" to="/">
+            <a onClick={setCurrentPosition("home")}>home</a>
+          </NavLink>
         </div>
 
         <div className="links-container">
-          <div className="nav-link-wrapper linkedin">
-            {/* linkedin logo button here */}
-            linkedin
+          <div className="header-option-wrapper linkedin">
+            <a
+              className="link-wrapper linkedin"
+              href="www.linkedin.com/in/james-d-hales"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
           </div>
 
-          <div className="nav-link-wrapper github">
-            {/* github pages button here */}
-            github
+          <div className="header-option-wrapper github">
+            <NavLink className="nav-link-wrapper github" to="/github">
+              <a onClick={setCurrentPosition("github")}>github</a>
+            </NavLink>
           </div>
 
-          <div className="nav-link-wrapper coverletter">
-            {/* add dark mode and light mode versions on click option */}
-            cover letter
+          <div
+            className="header-option-wrapper coverletter"
+            onMouseEnter={setShowDownloadOptions(true)}
+            onMouseLeave={setShowDownloadOptions(false)}
+          >
+            {showDownloadOptions && (
+              <downloadPopup list_of_data={resumse_array} />
+            )}
+            Resume(s)
           </div>
         </div>
       </div>
