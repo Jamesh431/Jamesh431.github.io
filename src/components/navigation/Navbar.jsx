@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import DownloadPopup from "../util/DownloadPopup";
-import resumse_array from "../helpers/resume_array";
+import resumeArray from "../helpers/resumeArray";
 
 export default function Navbar(props) {
   const [currentPosition, setCurrentPosition] = useState("");
@@ -53,7 +53,7 @@ export default function Navbar(props) {
             onMouseLeave={() => setShowDownloadOptions(false)}
           >
             {showDownloadOptions && (
-              <DownloadPopup list_of_data={resumse_array} />
+              <DownloadPopup list_of_data={resumeArray} />
             )}
             {!showDownloadOptions ? "Resume(s)" : null}
           </div>
