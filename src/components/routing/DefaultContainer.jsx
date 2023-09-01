@@ -5,6 +5,7 @@ import Footer from "../navigation/Footer";
 import LandingPage from "../pages/LandingPage";
 import Github from "../pages/Github";
 import About from "../pages/About";
+import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function DefaultContainer() {
   return (
@@ -13,7 +14,9 @@ export default function DefaultContainer() {
         <Route component={Navbar} />
 
         <Switch>
-          <Route exact path="/" component={LandingPage} />
+          <Redirect exact from="/" to="home" />
+
+          <Route exact path="/home" component={LandingPage} />
           <Route path="/github" component={Github} />
           <Route path="/about" component={About} />
         </Switch>
