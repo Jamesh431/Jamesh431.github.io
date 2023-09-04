@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "../navigation/Navbar";
-import Footer from "../navigation/Footer";
 import LandingPage from "../pages/LandingPage";
 import Github from "../pages/Github";
 import About from "../pages/About";
@@ -19,8 +18,6 @@ export default function DefaultContainer() {
         <Route path="/github" component={Github} />
         <Route path="/about" component={About} />
       </Switch>
-
-      <Footer />
     </Router>
   );
 }

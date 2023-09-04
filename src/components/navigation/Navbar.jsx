@@ -47,17 +47,19 @@ export default function Navbar(props) {
             </a>
           </div>
 
-          <div
-            className="header-option-wrapper resumes"
-            // onMouseEnter={() => setShowDownloadOptions(true)}
-            // onMouseLeave={() => setShowDownloadOptions(false)}
-          >
+          <div className="header-option-wrapper resumes">
             <a
               id="show-resumes-button"
               onClick={() => setShowDownloadOptions(true)}
             >
               Resumes(s)
             </a>
+          </div>
+
+          <div className="header-option-wrapper about">
+            <NavLink className="nav-link-wrapper" to="/about">
+              About & Contact
+            </NavLink>
           </div>
         </div>
       </div>
