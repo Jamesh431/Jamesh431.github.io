@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import DownloadPopup from "../util/DownloadPopup";
-import resumeArray from "../helpers/resumeArray";
+import EasyModal from "../modals/EasyModal";
+import ResumesModal from "../modals/ResumesModal";
 
 export default function Navbar(props) {
   const [currentPosition, setCurrentPosition] = useState("");
@@ -26,6 +26,16 @@ export default function Navbar(props) {
         </div>
 
         <div className="links-container">
+          <div className="header-option-wrapper github">
+            <NavLink
+              className="nav-link-wrapper github"
+              to="/github"
+              onClick={() => setCurrentPosition("Github")}
+            >
+              Github
+            </NavLink>
+          </div>
+
           <div className="header-option-wrapper linkedin">
             <a
               id="link-wrapper linkedin"
@@ -37,26 +47,16 @@ export default function Navbar(props) {
             </a>
           </div>
 
-          <div className="header-option-wrapper github">
-            <NavLink
-              className="nav-link-wrapper github"
-              to="/github"
-              onClick={() => setCurrentPosition("Github")}
-            >
-              Github
-            </NavLink>
-          </div>
-
           <div
             className="header-option-wrapper resumes"
-            onMouseEnter={() => setShowDownloadOptions(true)}
-            onMouseLeave={() => setShowDownloadOptions(false)}
+            // onMouseEnter={() => setShowDownloadOptions(true)}
+            // onMouseLeave={() => setShowDownloadOptions(false)}
           >
-            <a>
-              {showDownloadOptions && (
-                <DownloadPopup list_of_data={resumeArray} />
-              )}
-              {!showDownloadOptions ? "Resume(s)" : null}
+            <a
+              id="show-resumes-button"
+              onClick={() => setShowDownloadOptions(true)}
+            >
+              Resumes(s)
             </a>
           </div>
         </div>
@@ -67,6 +67,14 @@ export default function Navbar(props) {
           <h1>{currentPosition}</h1>
         )}
       </div>
+
+      <EasyModal
+        isOpen={showDownloadOptions}
+        onRequestClose={() => setShowDownloadOptions(!showDownloadOptions)}
+        content={{ width: "55%", height: "30%" }}
+      >
+        <ResumesModal setIsOpen={setShowDownloadOptions} />
+      </EasyModal>
     </div>
   );
 }

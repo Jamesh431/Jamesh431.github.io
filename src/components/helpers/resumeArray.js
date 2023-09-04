@@ -5,12 +5,14 @@ const resumeArray = [
   {
     filePath: jamesHalesResumeDarkmode,
     fileName: "james_hales_resume_darkmode.pdf",
-    onHover: "My resume, but darkmode!",
+    title: "Darkmode resume",
+    onHover: "Lightmode attracts bugs",
   },
   {
     filePath: jamesHalesResumeLightmode,
     fileName: "james_hales_resume_lightmode.pdf",
-    onHover: "My resume. Best for printing",
+    title: "Lightmode version, best for printing",
+    onHover: "Best for printing",
   },
 ];
 

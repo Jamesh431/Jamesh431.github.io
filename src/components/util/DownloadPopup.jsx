@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const DownloadPopup = ({ list_of_data }) => {
   return (
@@ -6,11 +6,15 @@ const DownloadPopup = ({ list_of_data }) => {
       <div className="download-options">
         {list_of_data.map((data) => {
           return (
-            <a href={data.filePath} download={data.fileName}>
-              <button className="download-option-wrapper">
-                {data.fileName}
-              </button>
-            </a>
+            <div className="resume-option-wrapper">
+              <a
+                href={data.filePath}
+                download={data.fileName}
+                title={data.onHover}
+              >
+                +{data.title}
+              </a>
+            </div>
           );
         })}
       </div>

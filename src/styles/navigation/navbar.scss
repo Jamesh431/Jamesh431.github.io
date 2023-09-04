@@ -10,6 +10,14 @@
       display: flex;
       justify-content: space-between;
       width: 77%;
+
+      .header-option-wrapper {
+        &.resumes {
+          #show-resumes-button {
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }
