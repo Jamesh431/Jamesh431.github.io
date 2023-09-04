@@ -1,10 +1,24 @@
 .header {
-  font-family: "Hapna Slab DemiBold";
+  margin-bottom: 7px;
+  padding: 7px 26px;
+
   .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    font-weight: 600;
+    font-size: large;
+
+    .active {
+      border-bottom: 2px solid $selected-anchor-color;
+    }
+
+    a {
+      &:hover {
+        border-bottom: 2px solid $selected-anchor-color;
+      }
+    }
 
     .links-container {
       display: flex;
