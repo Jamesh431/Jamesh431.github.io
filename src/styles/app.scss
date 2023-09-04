@@ -1,0 +1,14 @@
+@import "./common/mixins.scss";
+@import "./common/variables.scss";
+@import "./common/common.scss";
+
+@import "./navigation/footer.scss";
+@import "./navigation/navbar.scss";
+
+@import "./pages/landingpage.scss";
+@import "./pages/github.scss";
+@import "./pages/about.scss";
+
+@import "./util/downloadpopup.scss";
+@import "./util/projectcard.scss";
+@import "./util/mountcertificates.scss";

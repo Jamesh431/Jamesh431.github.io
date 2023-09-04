@@ -9,20 +9,18 @@ import { Redirect } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function DefaultContainer() {
   return (
-    <div className="app">
-      <Router>
-        <Route component={Navbar} />
+    <Router>
+      <Route component={Navbar} />
 
-        <Switch>
-          <Redirect exact from="/" to="home" />
+      <Switch>
+        <Redirect exact from="/" to="home" />
 
-          <Route exact path="/home" component={LandingPage} />
-          <Route path="/github" component={Github} />
-          <Route path="/about" component={About} />
-        </Switch>
+        <Route exact path="/home" component={LandingPage} />
+        <Route path="/github" component={Github} />
+        <Route path="/about" component={About} />
+      </Switch>
 
-        <Footer />
-      </Router>
-    </div>
+      <Footer />
+    </Router>
   );
 }

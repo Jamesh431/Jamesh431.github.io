@@ -12,20 +12,42 @@ export default function LandingPage(props) {
 
   return (
     <div className="project-wrapper" key={project_name}>
-      <div className="project-name">{project_name}</div>
+      <div className="project-name">
+        <p>{project_name}</p>
+      </div>
 
-      <div className="project-type">{project_type}</div>
+      {company ? (
+        <div className="company">
+          <p>{company}</p>
+        </div>
+      ) : null}
 
-      {company ? <div className="company">{company}</div> : null}
+      <div className="description">
+        <p>{description}</p>
+      </div>
 
-      <div className="description">{description}</div>
+      <div accomplishments>
+        <p>{accomplishments}</p>
+      </div>
 
-      <div accomplishments>{accomplishments}</div>
+      <div className="project-type">
+        <p>{project_type}</p>
+      </div>
 
-      {hostedURL ? <div className="hosted-link">{hostedURL}</div> : null}
+      {hostedURL ? (
+        <div className="hosted-link">
+          <a href={hostedURL} target="_blank" rel="noreferrer">
+            Hosted Site (Globe)
+          </a>
+        </div>
+      ) : null}
 
       {githubRepoURL ? (
-        <div className="github-repo-link">{githubRepoURL}</div>
+        <div className="github-repo-link">
+          <a href={githubRepoURL} target="_blank" rel="noreferrer">
+            GitHub Repo
+          </a>
+        </div>
       ) : null}
     </div>
   );

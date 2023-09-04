@@ -12,11 +12,12 @@ function mountProjectsInformation() {
 export default function LandingPage() {
   return (
     <div className="landing-page">
-      <div className="certificates-container">
-        <MountCertificates list_of_data={certsArray} />
-      </div>
       <div className="projects-container">
         {mountProjectsInformation(certsArray)}
+      </div>
+
+      <div className="certificates-container">
+        <MountCertificates list_of_data={certsArray} />
       </div>
     </div>
   );

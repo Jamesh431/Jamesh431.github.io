@@ -1,0 +1,7 @@
+@mixin hover-button-effect {
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    border-radius: 35px;
+  }
+}

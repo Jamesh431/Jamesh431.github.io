@@ -21,7 +21,7 @@ export default function Navbar(props) {
             to="/home"
             onClick={() => setCurrentPosition("Home")}
           >
-            home
+            Home
           </NavLink>
         </div>
 
@@ -43,7 +43,7 @@ export default function Navbar(props) {
               to="/github"
               onClick={() => setCurrentPosition("Github")}
             >
-              github
+              Github
             </NavLink>
           </div>
 
@@ -52,10 +52,12 @@ export default function Navbar(props) {
             onMouseEnter={() => setShowDownloadOptions(true)}
             onMouseLeave={() => setShowDownloadOptions(false)}
           >
-            {showDownloadOptions && (
-              <DownloadPopup list_of_data={resumeArray} />
-            )}
-            {!showDownloadOptions ? "Resume(s)" : null}
+            <a>
+              {showDownloadOptions && (
+                <DownloadPopup list_of_data={resumeArray} />
+              )}
+              {!showDownloadOptions ? "Resume(s)" : null}
+            </a>
           </div>
         </div>
       </div>

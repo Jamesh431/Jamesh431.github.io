@@ -1,0 +1,15 @@
+.header {
+  font-family: "Hapna Slab DemiBold";
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .links-container {
+      display: flex;
+      justify-content: space-between;
+      width: 77%;
+    }
+  }
+}

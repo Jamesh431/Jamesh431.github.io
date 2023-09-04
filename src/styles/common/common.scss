@@ -1,0 +1,21 @@
+html,
+body {
+  margin: 0px;
+  background-color: $background-color;
+  font-family: "Hapna Slab Medium";
+
+  a {
+    text-decoration: none;
+    color: $anchor-color;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: $primary-text-color;
+  }
+}

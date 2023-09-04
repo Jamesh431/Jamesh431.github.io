@@ -1,0 +1,10 @@
+.landing-page {
+  .certificates-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .projects-container {
+    display: flex;
+  }
+}
