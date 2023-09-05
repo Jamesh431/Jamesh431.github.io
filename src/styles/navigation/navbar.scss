@@ -15,7 +15,11 @@
     }
 
     a {
+      padding-bottom: 7px;
+      border-bottom: 2px solid transparent;
+
       &:hover {
+        transition: border-bottom 0.2s linear;
         border-bottom: 2px solid $selected-anchor-color;
       }
     }

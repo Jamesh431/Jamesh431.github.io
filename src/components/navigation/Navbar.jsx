@@ -53,7 +53,7 @@ export default function Navbar(props) {
               id="show-resumes-button"
               onClick={() => setShowDownloadOptions(true)}
             >
-              <FontAwesomeIcon icon="fa-regular fa-file" /> Resumes(s)
+              <FontAwesomeIcon icon="fa-regular fa-file" /> Resume
             </a>
           </div>
 

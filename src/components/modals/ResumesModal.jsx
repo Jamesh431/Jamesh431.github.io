@@ -8,13 +8,21 @@ export default function ResumesModal(props) {
 
   return (
     <div className="resume-selection-modal">
-      <div className="exit-wrapper" onClick={() => setIsOpen(false)}>
-        <FontAwesomeIcon
-          icon="fa-solid fa-xmark"
-          style={{ color: "#e2e2e2" }}
-        />
+      <div className="modal-header-container">
+        <div className="modal-title-wrapper">
+          <h1>Hey look, a modal!</h1>
+        </div>
+        <div className="exit-wrapper" onClick={() => setIsOpen(false)}>
+          <FontAwesomeIcon
+            icon="fa-solid fa-xmark"
+            style={{ color: "#e2e2e2" }}
+          />
+        </div>
+
+        <div className="modal-body-container">
+          <DownloadPopup list_of_data={resumeArray} />
+        </div>
       </div>
-      <DownloadPopup list_of_data={resumeArray} />
     </div>
   );
 }
