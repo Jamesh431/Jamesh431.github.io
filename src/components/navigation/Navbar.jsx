@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import EasyModal from "../modals/EasyModal";
 import ResumesModal from "../modals/ResumesModal";
@@ -21,7 +22,7 @@ export default function Navbar(props) {
             to="/home"
             onClick={() => setCurrentPosition("Home")}
           >
-            Home
+            <FontAwesomeIcon icon="fa-solid fa-house" size="sm" /> Home
           </NavLink>
         </div>
 
@@ -32,7 +33,7 @@ export default function Navbar(props) {
               to="/github"
               onClick={() => setCurrentPosition("Github")}
             >
-              Github
+              <FontAwesomeIcon icon="fa-brands fa-github" /> Github
             </NavLink>
           </div>
 
@@ -43,7 +44,7 @@ export default function Navbar(props) {
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn
+              <FontAwesomeIcon icon="fa-brands fa-linkedin" /> LinkedIn
             </a>
           </div>
 
@@ -52,13 +53,14 @@ export default function Navbar(props) {
               id="show-resumes-button"
               onClick={() => setShowDownloadOptions(true)}
             >
-              Resumes(s)
+              <FontAwesomeIcon icon="fa-regular fa-file" /> Resumes(s)
             </a>
           </div>
 
           <div className="header-option-wrapper about">
             <NavLink className="nav-link-wrapper" to="/about">
-              About & Contact
+              <FontAwesomeIcon icon="fa-regular fa-circle-question" /> About &
+              Contact
             </NavLink>
           </div>
         </div>

@@ -6,7 +6,7 @@ const projects = [
     description: "Task management app",
     accomplishments:
       "Lead the migration of data from app we were using before to the app we had created, also created postman for company to use that switched the backend url to be used in requests based on the users environment so incase of emergencies users could use postman for the hosted version, and teams could switch back to their local hosts. Was also the teams business analyst so I tracked developments in the app, trends, and requirements given by shareholder.",
-    hostedURL: "https://www.devpipeline.taskwize.com",
+    hostedURL: "https://taskwize.devpipeline.com/",
     githubRepoURL: null,
   },
   {

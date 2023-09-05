@@ -1,10 +1,11 @@
 .landing-page {
+  .projects-container {
+    display: flex;
+    margin-bottom: 17px;
+  }
+
   .certificates-container {
     display: grid;
     grid-template-columns: repeat(3, auto);
-  }
-
-  .projects-container {
-    display: flex;
   }
 }

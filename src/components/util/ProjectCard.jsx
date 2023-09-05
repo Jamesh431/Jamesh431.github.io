@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function LandingPage(props) {
   const { data } = props;
   const {
@@ -13,20 +15,14 @@ export default function LandingPage(props) {
   return (
     <div className="project-wrapper" key={project_name}>
       <div className="project-name">
-        <p>{project_name}</p>
+        <h2>{project_name}</h2>
       </div>
-
-      {company ? (
-        <div className="company">
-          <p>{company}</p>
-        </div>
-      ) : null}
 
       <div className="description">
         <p>{description}</p>
       </div>
 
-      <div accomplishments>
+      <div className="accomplishments">
         <p>{accomplishments}</p>
       </div>
 
@@ -34,10 +30,31 @@ export default function LandingPage(props) {
         <p>{project_type}</p>
       </div>
 
+      {company ? (
+        <div className="company">
+          {console.log(company)}
+          {company === "DevPipeline" ? (
+            <a
+              id="company-link"
+              href="https://devpipeline.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon
+                icon="fa-solid fa-code"
+                style={{ color: "#3aafa9" }}
+              />
+            </a>
+          ) : (
+            company
+          )}
+        </div>
+      ) : null}
+
       {hostedURL ? (
         <div className="hosted-link">
           <a href={hostedURL} target="_blank" rel="noreferrer">
-            Hosted Site (Globe)
+            <FontAwesomeIcon icon="fa-solid fa-globe" />
           </a>
         </div>
       ) : null}
@@ -45,7 +62,7 @@ export default function LandingPage(props) {
       {githubRepoURL ? (
         <div className="github-repo-link">
           <a href={githubRepoURL} target="_blank" rel="noreferrer">
-            GitHub Repo
+            <FontAwesomeIcon icon="fa-brands fa-git-alt" />
           </a>
         </div>
       ) : null}

@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DownloadPopup = ({ list_of_data }) => {
   return (
@@ -12,7 +12,8 @@ const DownloadPopup = ({ list_of_data }) => {
                 download={data.fileName}
                 title={data.onHover}
               >
-                +{data.title}
+                <FontAwesomeIcon icon="fa-regular fa-floppy-disk" />{" "}
+                {data.title}
               </a>
             </div>
           );
