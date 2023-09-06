@@ -49,12 +49,12 @@ export default function Navbar(props) {
           </div>
 
           <div className="header-option-wrapper resumes">
-            <a
+            <p
               id="show-resumes-button"
               onClick={() => setShowDownloadOptions(true)}
             >
               <FontAwesomeIcon icon="fa-regular fa-file" /> Resume
-            </a>
+            </p>
           </div>
 
           <div className="header-option-wrapper about">
