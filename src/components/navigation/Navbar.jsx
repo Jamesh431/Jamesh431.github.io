@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -8,10 +8,6 @@ import ResumesModal from "../modals/ResumesModal";
 export default function Navbar(props) {
   const [currentPosition, setCurrentPosition] = useState("");
   const [showDownloadOptions, setShowDownloadOptions] = useState(false);
-
-  useEffect(() => {
-    props.history?.push(`/${currentPosition}`);
-  }, [currentPosition]);
 
   return (
     <div className="header">
