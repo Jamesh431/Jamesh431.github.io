@@ -18,7 +18,7 @@ export default function LandingPage(props) {
         <h2>{project_name}</h2>
       </div>
 
-      <a id="project-information" href="">
+      <div id="project-information">
         <div className="description">
           <p>{description}</p>
         </div>
@@ -26,7 +26,7 @@ export default function LandingPage(props) {
         <div className="accomplishments">
           <p>{accomplishments}</p>
         </div>
-      </a>
+      </div>
 
       <div className="project-footer">
         <div className="project-type">
