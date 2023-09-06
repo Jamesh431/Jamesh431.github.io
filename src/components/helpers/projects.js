@@ -30,6 +30,15 @@ const projects = [
     githubRepoURL: "https://github.com/Jamesh431/widgets",
   },
   {
+    project_name: "Portfolio",
+    project_type: "Personal",
+    company: null,
+    description: "Hey wait, you're looking at it!",
+    accomplishments: "Take a look around, see anything you like?!",
+    hostedURL: "https://main--chipper-youtiao-77f73d.netlify.app/home",
+    githubRepoURL: "https://github.com/Jamesh431/Portfolio",
+  },
+  {
     project_name: "Pantry Partner",
     project_type: "Professional",
     company: "DevPipeline",
