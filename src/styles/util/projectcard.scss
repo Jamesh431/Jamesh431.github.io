@@ -1,19 +1,20 @@
 .project-wrapper {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  border: 1px solid red;
+  width: 20%;
+  box-shadow: 0px 1px 2px #3b3b3b;
   cursor: default;
+  opacity: 0.1;
 
+  transition: all 0.5s ease-in-out;
   &:hover {
+    box-shadow: 1px 4px 7px #3b3b3b4d;
+    opacity: 1;
     #project-information {
-      transition: all 0.7s ease-in-out;
-      opacity: 1;
     }
   }
 
   #project-information {
-    opacity: 0;
   }
 
   .project-name {
