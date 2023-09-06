@@ -15,9 +15,19 @@ const projects = [
     company: null,
     description: "Conceptiual Github repo cloning app",
     accomplishments:
-      "I thought of this idea because all of my commits for my class work being on my devpipeline github, and I wasn't able to keep that account. So for my final capstone I decided to create an application that would take all my class work repos, copy each commit and re-commit them onto my personal account Successfully demonstarted skills in python, sqlalchemy, marshmallow, psql, etc. Learned about automation with python, etc.",
+      "I thought of this idea because all of my commits for my class work were on my github account that devpipeline made for me, and I wasn't able to keep that account. So for my final capstone I decided to create an application that would take all my class work repos, copy each commit and re-commit them onto my personal account Successfully demonstarted skills in python, sqlalchemy, marshmallow, psql, etc. Learned about automation with python, etc.",
     hostedURL: null,
     githubRepoURL: "https://github.com/Jamesh431/Cyclone",
+  },
+  {
+    project_name: "Widgets",
+    project_type: "Personal",
+    company: null,
+    description: "Webpage filled with different widgets",
+    accomplishments:
+      "Webpage I am filling with different widgets I have made in the past. Currently there is only the image slider. This was originally built in just js and html, however for the site I refactored it to work with react",
+    hostedURL: "https://thriving-eclair-e6e1b5.netlify.app/",
+    githubRepoURL: "https://github.com/Jamesh431/widgets",
   },
   {
     project_name: "Pantry Partner",
