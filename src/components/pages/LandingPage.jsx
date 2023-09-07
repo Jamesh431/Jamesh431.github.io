@@ -5,12 +5,6 @@ import certsArray from "../helpers/certficatesArray";
 import Carousel from "../customComponents/Carousel";
 import CarouselSlide from "../customComponents/CarouselSlide";
 
-function mountProjectsInformation() {
-  return projects.map((project, idx) => (
-    <ProjectCard key={idx} data={project} />
-  ));
-}
-
 export default function LandingPage() {
   return (
     <div className="landing-page">
