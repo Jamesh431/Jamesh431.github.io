@@ -15,7 +15,7 @@ const projects = [
     company: null,
     description: "Conceptiual Github repo cloning app",
     accomplishments:
-      "I thought of this idea because all of my commits for my class work were on my github account that devpipeline made for me, and I wasn't able to keep that account. So for my final capstone I decided to create an application that would take all my class work repos, copy each commit and re-commit them onto my personal account Successfully demonstarted skills in python, sqlalchemy, marshmallow, psql, etc. Learned about automation with python, etc.",
+      "This was my My BackEnd capstone with Devpipeline. I thought of this idea because all of my commits for my class work were on my github account that devpipeline made for me, and I wasn't able to keep that account. So for my final capstone I decided to create an application that would take all my class work repos, copy each commit and re-commit them onto my personal account Successfully demonstarted skills in python, sqlalchemy, marshmallow, psql, etc. Learned about automation with python, etc.",
     hostedURL: null,
     githubRepoURL: "https://github.com/Jamesh431/Cyclone",
   },
@@ -49,12 +49,12 @@ const projects = [
     githubRepoURL: null,
   },
   {
-    project_name: "FE: Capstone",
+    project_name: "BlueBox",
     project_type: "Personal",
     company: null,
-    description: "FrontEnd capstone application",
+    description: "Conceptual Tv show-time website",
     accomplishments:
-      "Exhibited skills in JS, react, api calls, etc. Taught myself pagination in this project",
+      "This was my My FrontEnd capstone with Devpipeline. I created a model movie site with tvmaze api. Exhibited skills in JS, react, api calls, etc. Taught myself pagination in this project",
     hostedURL: "https://main--stellular-eclair-411bca.netlify.app/",
     githubRepoURL: "https://github.com/James-Devpipline/fe-32-fe-capstone",
   },

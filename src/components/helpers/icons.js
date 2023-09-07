@@ -4,6 +4,8 @@ import {
   faCode,
   faGlobe,
   faXmark,
+  faChevronLeft,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { far } from "@fortawesome/free-regular-svg-icons";
@@ -28,6 +30,8 @@ export default function initIcons() {
     faCode,
     faGlobe,
     faXmark,
+    faChevronLeft,
+    faChevronRight,
     faSquareGithub,
     faLinkedin,
     faGitAlt,
