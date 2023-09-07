@@ -1,6 +1,6 @@
 import foundationsCert from "../../assets/certificates/foundationsCert.jpg";
 import frontendCert from "../../assets/certificates/frontendCert.jpg";
-import inProgress from "../../assets/certificates/inProgress.jpg";
+import tempBackEndCert from "../../assets/certificates/tempBackEndCert.png";
 
 const certsArray = [
   {
@@ -12,7 +12,7 @@ const certsArray = [
     onHover: "My certificate from the Front-End course at DevPipeline",
   },
   {
-    filePath: inProgress,
+    filePath: tempBackEndCert,
     onHover: "My certificate from the Back-End course at DevPipeline",
   },
 ];
