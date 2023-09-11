@@ -2,12 +2,14 @@
 @import "./common/variables.scss";
 @import "./common/common.scss";
 
+@import "./modals/resume-modal.scss";
+
 @import "./navigation/navbar.scss";
 
-@import "./pages/landingpage.scss";
+@import "./pages/landing-page.scss";
 @import "./pages/github.scss";
 @import "./pages/about.scss";
 
-@import "./util/downloadpopup.scss";
-@import "./util/projectcard.scss";
-@import "./util/mountcertificates.scss";
+@import "./util/download-popup.scss";
+@import "./util/project-card.scss";
+@import "./util/mount-certificates.scss";
