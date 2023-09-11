@@ -16,6 +16,7 @@ export default function Navbar(props) {
           <NavLink
             className="nav-link-wrapper home"
             to="/Portfolio/"
+            exact={true}
             onClick={() => setCurrentPosition("Home")}
           >
             <FontAwesomeIcon icon="fa-solid fa-house" size="sm" /> Home
