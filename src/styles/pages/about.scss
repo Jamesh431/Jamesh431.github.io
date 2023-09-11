@@ -1,52 +1,35 @@
-.github-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5%;
+.about-page {
+  padding: 0 2%;
 
-  .eyes {
-    font-size: 37px;
-    h1 {
-      margin: 0;
-    }
-  }
-
-  .notice-title {
-    font-size: 27px;
-
-    h1 {
-      margin-bottom: 17%;
-    }
-  }
-
-  .githubs-container {
-    display: grid;
-    width: 57%;
-    grid-template-columns: repeat(2, 50%);
-
-    .github-wrapper {
+  .about-container {
+    .contact-info-container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      font-size: larger;
 
-      a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-bottom: 2px solid;
-        @include hover-button-effect;
+      .email-wrapper {
+        margin-right: 5%;
 
-        .github-button {
-          svg {
-            height: 177px;
-          }
+        a {
+          padding-bottom: 1.2%;
+          border-bottom: 2px solid;
+          @include hover-button-effect;
         }
       }
 
-      .github-about {
+      .location-wrapper {
         p {
-          opacity: 1;
+          margin: 0;
         }
+      }
+    }
+
+    .about-me {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1%;
+
+      p {
+        font-size: larger;
       }
     }
   }

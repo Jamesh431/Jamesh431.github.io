@@ -1,0 +1,53 @@
+.github-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+
+  .eyes {
+    font-size: 37px;
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .notice-title {
+    font-size: 27px;
+
+    h1 {
+      margin-bottom: 17%;
+    }
+  }
+
+  .githubs-container {
+    display: grid;
+    width: 57%;
+    grid-template-columns: repeat(2, 50%);
+
+    .github-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid;
+        @include hover-button-effect;
+
+        .github-button {
+          svg {
+            height: 177px;
+          }
+        }
+      }
+
+      .github-about {
+        p {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
