@@ -15,7 +15,7 @@ export default function Navbar(props) {
         <div className="home-container">
           <NavLink
             className="nav-link-wrapper home"
-            to="/home"
+            to="/Portfolio/"
             onClick={() => setCurrentPosition("Home")}
           >
             <FontAwesomeIcon icon="fa-solid fa-house" size="sm" /> Home
@@ -26,7 +26,7 @@ export default function Navbar(props) {
           <div className="header-option-wrapper github">
             <NavLink
               className="nav-link-wrapper github"
-              to="/github"
+              to="/Portfolio/github"
               onClick={() => setCurrentPosition("Github")}
             >
               <FontAwesomeIcon icon="fa-brands fa-github" /> Github
@@ -54,7 +54,7 @@ export default function Navbar(props) {
           </div>
 
           <div className="header-option-wrapper about">
-            <NavLink className="nav-link-wrapper" to="/about">
+            <NavLink className="nav-link-wrapper" to="/Portfolio/about">
               <FontAwesomeIcon icon="fa-regular fa-circle-question" /> About &
               Contact
             </NavLink>
