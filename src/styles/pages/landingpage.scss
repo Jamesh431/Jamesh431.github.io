@@ -32,9 +32,35 @@
           background-color: transparent;
           width: 5%;
           height: 5%;
+          border-style: none;
+          margin: 0 2.7%;
 
           svg {
-            color: $selected-anchor-color;
+            color: #d9202098;
+            height: auto;
+            width: 39%;
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            svg {
+              color: $selected-anchor-color;
+            }
+          }
+
+          &:disabled {
+            svg {
+              color: #d920204c;
+            }
+
+            &:hover {
+              cursor: default;
+
+              svg {
+                color: #d920204c;
+              }
+            }
           }
         }
 
@@ -46,8 +72,12 @@
   }
 
   .certificates-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    .certificates-spacer {
+      display: flex;
+      justify-content: space-around;
+    }
   }
 }
