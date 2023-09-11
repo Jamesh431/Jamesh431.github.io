@@ -24,7 +24,9 @@ export default function LandingPage() {
       </div>
 
       <div className="certificates-container">
-        <MountCertificates list_of_data={certsArray} />
+        <div className="certificates-spacer">
+          <MountCertificates list_of_data={certsArray} />
+        </div>
       </div>
     </div>
   );

@@ -7,24 +7,17 @@ export default function CarouselSlide({ card, title }) {
 
   const Card = card;
   const renderCards = (cards) =>
-    cards.map((card, idx) => <Card key={idx} data={card} />);
+    cards.map((card, idx) => <Card key={`card${idx}`} data={card} />);
 
   const renderSlides = () => {
     return data.map((slide, idx) => (
       <div
         className="carousel-slide-wrapper"
         style={{ transform: `translateX(${-currentSlide * 100}%)` }}
+        key={idx}
       >
         {renderCards(slide)}
       </div>
-
-      // <CarouselSlide
-      //   key={`slide-${idx}`}
-      //   transform={`translateX(${-currentSlide * 100}%)`}
-      //   cardOrientation={cardOrientation}
-      //   data={slide}
-      //   card={card}
-      // />
     ));
   };
 

@@ -4,8 +4,6 @@ import {
   faCode,
   faGlobe,
   faXmark,
-  faChevronLeft,
-  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
 import { far } from "@fortawesome/free-regular-svg-icons";
@@ -22,6 +20,9 @@ import {
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { faCircleLeft, faCircleRight } from "@fortawesome/free-solid-svg-icons";
+
 export default function initIcons() {
   return library.add(
     fab,
@@ -30,13 +31,14 @@ export default function initIcons() {
     faCode,
     faGlobe,
     faXmark,
-    faChevronLeft,
-    faChevronRight,
     faSquareGithub,
     faLinkedin,
     faGitAlt,
     faFile,
     faCircleQuestion,
-    faFloppyDisk
+    faFloppyDisk,
+    fas,
+    faCircleLeft,
+    faCircleRight
   );
 }

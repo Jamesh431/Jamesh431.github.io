@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // need to use chevrons for this
-// lines with comments that are empty are fixed imports/reworked code
-import useWindowSize from "../helpers/useWindowSize"; //
-import { sortCarouselData } from "../helpers/sortCarouselData"; //
-import { truncatePageNumbers } from "../helpers/arrayUtils"; //
-import { CarouselContext } from "../context/appDataContext"; //
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import useWindowSize from "../helpers/useWindowSize";
+import { sortCarouselData } from "../helpers/sortCarouselData";
+import { truncatePageNumbers } from "../helpers/arrayUtils";
+import { CarouselContext } from "../context/appDataContext";
 
 export default function Carousel({ children, data, views }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [cardsPerSlide, setCardsPerSlide] = useState(5);
-  const sortedData = sortCarouselData(data, cardsPerSlide); // error caused when improper card is inserted when mounting on app.js
+  const sortedData = sortCarouselData(data, cardsPerSlide);
   const { width } = useWindowSize();
 
   const defaultCarouselData = {
@@ -58,7 +57,7 @@ export default function Carousel({ children, data, views }) {
             onClick={() => setCurrentSlide((prev) => prev - 1)}
             disabled={currentSlide === 0}
           >
-            <FontAwesomeIcon icon="fa-solid fa-chevron-left" />
+            <FontAwesomeIcon icon="fa-solid fa-circle-left" />
           </button>
 
           <div className="page-numbers-wrapper">{renderCarousel()}</div>
@@ -67,7 +66,7 @@ export default function Carousel({ children, data, views }) {
             onClick={() => setCurrentSlide((prev) => prev + 1)}
             disabled={currentSlide === sortedData.length - 1}
           >
-            <FontAwesomeIcon icon="fa-solid fa-chevron-right" />
+            <FontAwesomeIcon icon="fa-solid fa-circle-right" />
           </button>
         </div>
       </div>

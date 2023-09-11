@@ -9,7 +9,5 @@ export const sortCarouselData = (data, itemsPerPage) => {
     chunks.push(chunk);
   }
 
-  console.log(chunks);
-
   return chunks;
 };
