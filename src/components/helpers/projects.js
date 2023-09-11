@@ -35,7 +35,7 @@ const projects = [
     company: null,
     description: "Hey wait, you're looking at it!",
     accomplishments: "Take a look around, see anything you like?!",
-    hostedURL: "https://main--chipper-youtiao-77f73d.netlify.app/home",
+    hostedURL: "https://jamesh431.github.io/Portfolio/",
     githubRepoURL: "https://github.com/Jamesh431/Portfolio",
   },
   {
