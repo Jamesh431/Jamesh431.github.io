@@ -14,10 +14,7 @@ export default function DefaultContainer() {
       <Route component={Navbar} />
 
       <Switch>
-        <Redirect exact from="/Portfolio" to="/" />
-        <Redirect exact from="/" to="/home" />
-
-        <Route exact path="/home" component={LandingPage} />
+        <Route exact path="/" component={LandingPage} />
         <Route path="/github" component={Github} />
         <Route path="/about" component={About} />
       </Switch>
