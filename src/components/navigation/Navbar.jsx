@@ -72,7 +72,7 @@ export default function Navbar(props) {
       <EasyModal
         isOpen={showDownloadOptions}
         onRequestClose={() => setShowDownloadOptions(!showDownloadOptions)}
-        content={{ width: "27%", height: "24%" }}
+        content={{ width: "600px", height: "250px" }}
       >
         <ResumesModal setIsOpen={setShowDownloadOptions} />
       </EasyModal>
