@@ -1,6 +1,10 @@
 .header {
   margin-bottom: 7px;
   padding: 7px 5%;
+  position: sticky;
+  top: 0;
+  background-color: $background-color;
+  z-index: 999999;
 
   .navigation {
     display: flex;
@@ -9,7 +13,6 @@
     width: 100%;
     font-weight: 600;
     font-size: 22.7px;
-
     .active {
       border-bottom: 2px solid $selected-anchor-color;
     }
