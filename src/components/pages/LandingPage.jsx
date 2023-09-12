@@ -9,6 +9,9 @@ export default function LandingPage() {
   return (
     <div className="landing-page">
       <div className="projects-container">
+        <div className="projects-title">
+          <h1>Projects</h1>
+        </div>
         <Carousel
           data={projects}
           views={{
@@ -24,6 +27,9 @@ export default function LandingPage() {
       </div>
 
       <div className="certificates-container">
+        <div className="certificates-title">
+          <h1>My Certificates</h1>
+        </div>
         <div className="certificates-spacer">
           <MountCertificates list_of_data={certsArray} />
         </div>

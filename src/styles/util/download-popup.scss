@@ -1,0 +1,28 @@
+.download-popup-container {
+  .download-options {
+    font-size: 22px;
+
+    .resume-option-wrapper {
+      margin-bottom: 1%;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: 7px;
+        }
+
+        &:hover {
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+          color: $selected-anchor-color;
+
+          svg {
+            color: $primary-text-color;
+          }
+        }
+      }
+    }
+  }
+}

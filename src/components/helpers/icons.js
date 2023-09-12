@@ -14,11 +14,7 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import {
-  faSquareGithub,
-  faLinkedin,
-  faGitAlt,
-} from "@fortawesome/free-brands-svg-icons";
+import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { faCircleLeft, faCircleRight } from "@fortawesome/free-solid-svg-icons";
@@ -33,7 +29,6 @@ export default function initIcons() {
     faXmark,
     faSquareGithub,
     faLinkedin,
-    faGitAlt,
     faFile,
     faCircleQuestion,
     faFloppyDisk,

@@ -1,18 +1,20 @@
-html,
-body {
-  margin: 0px;
+html {
   background-color: $background-color;
-  font-family: "Hapna Slab DemiBold";
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  a {
-    text-decoration: none;
-    color: $primary-text-color;
+  body {
+    margin: 0px;
+    font-family: "Hapna Slab DemiBold";
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a {
+      text-decoration: none;
+      color: $primary-text-color;
+    }
   }
 }
