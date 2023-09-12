@@ -21,7 +21,7 @@
 
   .githubs-container {
     display: grid;
-    width: 57%;
+    width: 67%;
     grid-template-columns: repeat(2, 50%);
 
     .github-wrapper {
@@ -33,19 +33,38 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-bottom: 2px solid;
-        @include hover-button-effect;
 
-        .github-button {
-          svg {
-            height: 177px;
+        .github-border-wrapper {
+          transition: all 0.27s ease-in-out;
+          text-align: center;
+          border-bottom: 2px solid;
+          width: auto;
+          .github-logo {
+            svg {
+              height: 177px;
+            }
           }
         }
-      }
 
-      .github-about {
-        p {
-          opacity: 1;
+        .github-about {
+          text-align: center;
+          width: 82%;
+          p {
+            opacity: 0.3;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+
+        &:hover {
+          .github-border-wrapper {
+            border-bottom: 2px solid $selected-anchor-color;
+          }
+
+          .github-about {
+            p {
+              opacity: 1;
+            }
+          }
         }
       }
     }
