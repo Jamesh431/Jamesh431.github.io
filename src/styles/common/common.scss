@@ -1,5 +1,8 @@
 html {
   background-color: $background-color;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   body {
     margin: 0px;

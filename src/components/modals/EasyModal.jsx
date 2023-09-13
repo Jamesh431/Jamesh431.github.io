@@ -31,7 +31,7 @@ export default function EasyModal(props) {
           left: "32.6%",
           margin: "0 auto",
           borderRadius: "10px",
-          backgroundColor: "#020202",
+          backgroundColor: "#232323",
           padding: "0px",
           overflow: "hidden",
           border: "2px solid #d92020",

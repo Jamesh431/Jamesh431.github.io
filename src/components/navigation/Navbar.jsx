@@ -73,6 +73,7 @@ export default function Navbar(props) {
         isOpen={showDownloadOptions}
         onRequestClose={() => setShowDownloadOptions(!showDownloadOptions)}
         content={{ width: "600px", height: "250px" }}
+        overlay={{ backgroundColor: "transparent" }}
       >
         <ResumesModal setIsOpen={setShowDownloadOptions} />
       </EasyModal>
