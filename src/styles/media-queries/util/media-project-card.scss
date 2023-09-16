@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+  .project-container {
+    width: 47%;
+    height: auto;
+
+    .project-wrapper {
+      .project-name {
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 677px) {
+  .project-container {
+    width: 67%;
+    height: auto;
+
+    .project-wrapper {
+      padding: 0 7%;
+      .project-name {
+        h2 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 504px) {
+  .project-container {
+    width: 85%;
+    height: auto;
+
+    .project-wrapper {
+      .project-name {
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

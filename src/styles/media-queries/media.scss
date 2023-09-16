@@ -4,10 +4,10 @@
 
 @import "./navigation/media-navbar.scss";
 
-// @import "./pages/landing-page.scss";
+@import "./pages/media-landing-page.scss";
 // @import "./pages/github.scss";
 // @import "./pages/about.scss";
 
 // @import "./util/download-popup.scss";
-// @import "./util/project-card.scss";
-// @import "./util/mount-certificates.scss";
+@import "./util/media-project-card.scss";
+@import "./util/media-mount-certificates.scss";

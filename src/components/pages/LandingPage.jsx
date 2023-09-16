@@ -15,9 +15,8 @@ export default function LandingPage() {
         <Carousel
           data={projects}
           views={{
-            504: 2,
-            768: 2,
-            1024: 3,
+            677: 1,
+            1024: 2,
             1440: 3,
             2560: 3,
           }}
@@ -26,10 +25,11 @@ export default function LandingPage() {
         </Carousel>
       </div>
 
+      <div className="certificates-title">
+        <h1>My Certificates</h1>
+      </div>
+
       <div className="certificates-container">
-        <div className="certificates-title">
-          <h1>My Certificates</h1>
-        </div>
         <div className="certificates-spacer">
           <MountCertificates list_of_data={certsArray} />
         </div>
