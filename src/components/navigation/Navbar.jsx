@@ -1,17 +1,47 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import useWindowSize from "../hooks/useWindowSize";
 import EasyModal from "../modals/EasyModal";
 import ResumesModal from "../modals/ResumesModal";
 
 export default function Navbar(props) {
   const [currentPosition, setCurrentPosition] = useState("");
+  const [isMobile, setIsMobile] = useState(true);
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const [showDownloadOptions, setShowDownloadOptions] = useState(false);
 
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    if (width > 768) {
+      setIsMobile(false);
+    }
+  }, [width]);
+
   return (
-    <div className="header">
-      <div className="navigation">
+    <div className="header" style={!isHamburgerOpen ? { height: "30px" } : {}}>
+      {isMobile && (
+        <div
+          className="hamburger-control"
+          onClick={() => setIsHamburgerOpen(!isHamburgerOpen)}
+        >
+          <div className={`animated-icon ${isHamburgerOpen && "open"}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      )}
+
+      <div
+        className="navigation"
+        style={{
+          transition: "0.25s ease-in-out",
+          marginBottom: !isMobile || isHamburgerOpen ? "auto" : -100,
+        }}
+      >
         <div className="home-container">
           <NavLink
             className="nav-link-wrapper home"
