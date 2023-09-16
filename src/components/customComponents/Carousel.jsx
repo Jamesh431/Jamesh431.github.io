@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import useWindowSize from "../helpers/useWindowSize";
+import useWindowSize from "../hooks/useWindowSize";
 import { sortCarouselData } from "../helpers/sortCarouselData";
 import { truncatePageNumbers } from "../helpers/arrayUtils";
 import { CarouselContext } from "../context/appDataContext";
