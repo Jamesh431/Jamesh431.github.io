@@ -2,8 +2,6 @@
   .header {
     overflow: hidden;
     height: 100%;
-    // margin-bottom: 0px;
-    // padding: 14px 0 0 4%;
 
     .hamburger-control {
       margin-bottom: 5%;
@@ -64,18 +62,9 @@
     .navigation {
       flex-direction: column;
 
-      .active {
-        // border-bottom: 2px solid $selected-anchor-color;
-      }
-
       a,
       p {
         padding-bottom: 0;
-
-        &:hover {
-          // transition: border-bottom 0.2s linear;
-          // border-bottom: 2px solid $selected-anchor-color;
-        }
       }
 
       .links-container {
@@ -84,14 +73,6 @@
 
         div {
           margin-bottom: 7px;
-        }
-
-        .header-option-wrapper {
-          &.resumes {
-            #show-resumes-button {
-              // cursor: pointer;
-            }
-          }
         }
       }
     }
