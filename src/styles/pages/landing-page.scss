@@ -4,13 +4,10 @@
     flex-direction: column;
     margin-bottom: 17px;
     justify-content: space-evenly;
-    opacity: 0.9;
-    transition: all 0.3s ease-in-out;
+    opacity: 1;
 
     .projects-title {
       text-align: center;
-      opacity: 0.4;
-      transition: all 0.3s ease-in-out;
     }
 
     .carousel-container {
@@ -79,21 +76,12 @@
         }
       }
     }
-
-    &:hover {
-      transition: all 0.3s ease-in-out;
-      opacity: 1;
-      .projects-title {
-        transition: all 0.3s ease-in-out;
-        opacity: 1;
-      }
-    }
   }
 
   .certificates-container {
     width: 90%;
     margin: 5% auto;
-    opacity: 0.3;
+    opacity: 0.5;
     transition: all 0.3s ease-in-out;
 
     .certificates-title {
